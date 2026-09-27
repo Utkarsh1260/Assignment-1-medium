@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-**Live Demo:** [View Live Project](YOUR_LIVE_DEMO_LINK_HERE)
+**Live Demo:** [View Live Project](https://assignment-1-medium.vercel.app/)
 
 <img src="./asset/live_preview.png" alt="Pokémon Gen I — Pikachu UI" width="100%">
 
