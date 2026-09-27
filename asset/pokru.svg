@@ -1,0 +1,113 @@
+<svg
+    width="512"
+    height="512"
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <!-- Main blue -->
+        <linearGradient id="ballBlue" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3154E8"/>
+            <stop offset="100%" stop-color="#2948C8"/>
+        </linearGradient>
+
+        <!-- Top highlight -->
+        <linearGradient id="topHighlight" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8EA7FF"/>
+            <stop offset="100%" stop-color="#6F8CF4"/>
+        </linearGradient>
+
+        <!-- Center circle -->
+        <radialGradient id="centerBall" cx="50%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="70%" stop-color="#E8EEFF"/>
+            <stop offset="100%" stop-color="#C9D5FA"/>
+        </radialGradient>
+
+        <clipPath id="ballClip">
+            <circle cx="256" cy="256" r="230"/>
+        </clipPath>
+    </defs>
+
+    <!-- Main ball -->
+    <circle
+        cx="256"
+        cy="256"
+        r="230"
+        fill="url(#ballBlue)"
+    />
+
+    <g clip-path="url(#ballClip)">
+
+        <!-- Upper lighter-blue curved section -->
+        <path
+            d="
+                M 26 250
+                A 230 230 0 0 1 486 250
+                L 430 250
+                A 174 174 0 0 0 82 250
+                Z
+            "
+            fill="url(#topHighlight)"
+        />
+
+        <!-- Inner soft highlight -->
+        <path
+            d="
+                M 92 250
+                A 164 164 0 0 1 420 250
+                L 382 250
+                A 126 126 0 0 0 130 250
+                Z
+            "
+            fill="#C0CDFF"
+            opacity="0.55"
+        />
+
+        <!-- White center band -->
+        <rect
+            x="0"
+            y="239"
+            width="512"
+            height="34"
+            fill="#FFFFFF"
+        />
+
+        <!-- Slight blue shadow beneath white band -->
+        <rect
+            x="0"
+            y="273"
+            width="512"
+            height="5"
+            fill="#2948C8"
+            opacity="0.18"
+        />
+    </g>
+
+    <!-- Center button outer -->
+    <circle
+        cx="256"
+        cy="256"
+        r="63"
+        fill="#D5DFFF"
+        stroke="#5C77E8"
+        stroke-width="8"
+    />
+
+    <!-- Center button -->
+    <circle
+        cx="256"
+        cy="256"
+        r="50"
+        fill="url(#centerBall)"
+    />
+
+    <!-- Center subtle highlight -->
+    <circle
+        cx="242"
+        cy="241"
+        r="20"
+        fill="#FFFFFF"
+        opacity="0.35"
+    />
+</svg>
